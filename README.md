@@ -57,7 +57,7 @@ subprojects {
 
 ```
 
-- Add below color attributes in your app `res/color.xml`. You can provide your own color codes
+- Add below color attributes in your app `res/values/color.xml`. You can provide your own color codes
 
 ```
     <color name="colorPrimary">#3F51B5</color>
