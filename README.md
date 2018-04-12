@@ -42,6 +42,19 @@ repositories {
         url  "http://dl.bintray.com/lukaville/maven"
     }
 }
+
+######最后加上
+subprojects {
+    afterEvaluate {project ->
+        if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion 25
+                buildToolsVersion '25.0.0'
+            }
+        }
+    }
+}
+
 ```
 
 - Add below color attributes in your app `res/color.xml`. You can provide your own color codes
